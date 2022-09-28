@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import "/css/header_css.css";
+
+.container {
+  background-color: #3d4581;
+  padding: 5rem 2rem 0 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container .content {
+  max-width: 760px;
+  padding: 2.5rem 1.1rem 1rem 1.1rem;
+}
+
+.container .mypic {
+  /*max-width: 250px;*/
+  /*border: 3px solid #fff;*/
+  /*border-radius: 0px 20px;*/
+  /*padding: 5px;*/
+
+  /*for new img*/
+  max-width: 220px;
+  /*border: 0.5px solid #70e0ff;*/
+  padding: 4px;
+  border-radius: 10%;
+  box-shadow:0px 6px 0px 0px #70e0ff, 0px 0px 11px 1px #70e0ff;
+  background-color: #48679f94;
+}
+.container .content h2 {
+  font-size: 2.6em;
+  color: #fff;
+  padding: 0 10px 20px 0;
+  letter-spacing: 0.05rem;
+  font-family: "Arkhip_font";
+  text-align: center;
+}
+.container .myname {
+  font-size: 30px;
+  color: #efff6e;
+  font-family: "Arkhip_font";
+  letter-spacing: 0;
+}
+.container .content p {
+  font-size: 1.2em;
+  color: #fff;
+  letter-spacing: 0.03rem;
+}
+
+.container .content p > .moreinfo {
+  display: block;
+  max-height: 0rem;
+  overflow-y: hidden;
+  transition: 0.6s ease-in-out;
+}
+
+.container .content p > .moreinfo.show {
+  max-height: 30rem;
+}
+
+.container .content .readmore {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  background: #285496;
+  color: #fff;
+  padding: 7px 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  letter-spacing: 0.05rem;
+}
+.container .content .readmore:hover {
+  color: #9ff9ff;
+  border-color: #449398;
+  background-color: #0a113f;
+  transform: scale(1.05);
+  box-shadow: rgb(68 147 152) 0px 0px 20px 0px;
+}
+
+.very-curious {
+  opacity: 0;
+  font-size: 0.8rem !important;
+  text-align: center;
+}
+.very-curious a {
+  color: #ecf06d;
+  text-decoration: none;
+}
+.very-curious.show {
+  opacity: 1;
+  transition: opacity 2.5s ease-in;
+  transition-delay: 7s;
+}
+
+@media screen and (max-width: 991px) {
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+  header .navigation {
+    margin: 18px 0px;
+  }
+  .container {
+    padding: 180px 20px 50px;
+    flex-direction: column;
+  }
+  .container .content h2 {
+    font-size: 2.4em;
+    padding: 0 0px 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px 0px;
+  }
+  .container {
+    padding: 200px 20px 50px;
+  }
+  .container .content h2 {
+    font-size: 2.1em;
+    padding: 0 0px 20px 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    padding: 200px 20px 20px;
+  }
+  .container .content {
+    max-width: 750px;
+    padding: 20px 5px 0px 5px;
+  }
+  .container .content h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .container .content p {
+    font-size: 15px;
+  }
+}

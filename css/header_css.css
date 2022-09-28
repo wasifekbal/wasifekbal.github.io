@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Arkhip_font;
+    src: url("../fonts/Arkhip_font.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #5b639c;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cccdcd;
+    border-radius: 10px;
+    border: 2px solid #5b639c;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #cccdcd #5b639c;
+    background-color: #3d4581;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background-color: #5b639c;
+    border-bottom: 2px solid rgb(255, 222, 173);
+    box-shadow: 0 0 1.5rem #5cf8f9;
+}
+
+header .logo {
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Arkhip_font";
+    text-shadow: 0 5px 1rem #4b9dbc;
+}
+
+header .navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+header .navigation li {
+    list-style: none;
+    margin: 0px 10px;
+}
+header .navigation li {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    padding: 4px;
+}
+.active_li {
+    border: 1px solid #00fffa;
+}
+header .navigation li a:hover {
+    color: #00fffa;
+    box-shadow: rgb(83 227 231 / 85%) 0px 0px 15px 0px;
+}
+header .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header .icons a {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    margin: 0px 12px;
+    padding: 4px;
+    border: 1px solid #fff;
+    border-radius: 5px 0;
+}
+header .icons a:hover {
+    border-color: #00fffa;
+    color: #00fffa;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transform: scale(1.05);
+}
+
+header .icons a:hover .fa {
+    color: #00fffa;
+}
+
+header .icons .fa {
+    color: white;
+}

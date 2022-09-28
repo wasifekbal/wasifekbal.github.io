@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="pic/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/resume.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Wasif's Resume</title>
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo">Wasif Ekbal</a>
+      <ul class="navigation">
+        <li><a href="/">Home</a></li>
+        <li><a href="resume.html" class="active_li">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <!-- <li><a href="blogs.html" class="disabled">Blogs</a></li> -->
+      </ul>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/wasifekbal/" target="_blank"
+          ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="https://github.com/wasifekbal" target="_blank"
+          ><i class="fa fa-github fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="https://wasifekbal.medium.com" target="_blank"
+          ><i class="fa fa-medium fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="https://twitter.com/_wasifekbal" target="_blank"
+          ><i class="fa fa-twitter fa-2x" aria-hidden="true"></i
+        ></a>
+        <a href="mailto:wasifekbal27@gmail.com"
+          ><i class="fa fa-envelope fa-2x" aria-hidden="true"></i
+        ></a>
+      </div>
+    </header>
+    <div class="menu-bar">
+      <ul class="menu">
+        <li class="active_section">
+          <span id="webdev">Web Developer</span>
+        </li>
+        <li>
+          <span id="cybsec" href="#">Cybersecurity</span>
+        </li>
+        <li>
+          <span id="ml">Machine Learning</span>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <button
+        id="dwnld_btn"
+        class="download_btn"
+        onclick="window.open('./resumes/webdev_resume.pdf')"
+      >
+        Download resume
+      </button>
+      <img
+        id="resume_img"
+        class="resume"
+        src="pic/webdev_resume.jpg"
+        alt="image of resume"
+      />
+      <script src="https://tryhackme.com/badge/166984"></script>
+    </div>
+  </body>
+  <script src="./js/resume.js"></script>
+</html>

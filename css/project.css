@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import "/css/header_css.css";
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3d4581;
+    min-height: 100vh;
+    padding: 100px 25px 25px;
+}
+
+.container .box_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 90%;
+
+}
+.single_box {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    background-color: #393f6c;
+    margin: 15px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 510px;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.single_box:hover{
+    border: 2px solid rgba(255,255,255,0.6);
+}
+
+.single_box img {
+    height: 200px;
+    min-width: 330px;
+    margin: 14px 0px;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 4px;
+    background-size: cover;
+}
+
+.header_text{
+    margin: 4px 16px;
+    color: white;
+    padding: 3px 5px 0 5px;
+    transition: color 300ms ease-in-out;   
+}
+
+.header_text Strong {
+    font-family: 'Arkhip_font';
+}
+
+.header_text_hover{
+    border: 1px solid white;
+    /* color: rgb(51, 214, 119) !important; */
+    color: #00fde8 !important;
+    border-radius: 5px;
+    margin: 3px 15px;
+}
+
+.details {
+    padding: 10px 10px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.details a {
+    text-decoration: none;
+    color: #c2ff61;
+}
+
+@media screen and (max-width: 991px)
+{
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+    header .navigation {
+        margin: 18px 0px;
+    }
+    .container {
+        padding: 180px 20px 50px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    header {
+        padding: 10px 0px;
+    }
+    .container {
+        padding: 200px 20px 50px;
+    }
+    .single_box {
+        width: 330px;
+    }
+    .single_box img {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 479px)
+{
+    .container {
+        padding: 200px 20px 20px;
+    }
+}
